@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الذكاء - 100 مرحلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="stage-info">
+                المرحلة <span id="stageNumber">1</span>
+            </div>
+            <div class="difficulty-badge">
+                <span class="difficulty-icon" id="difficultyIcon">🌱</span>
+                <span id="difficultyText">سهل</span>
+            </div>
+        </div>
+
+        <!-- قسم النقاط الجديد -->
+        <div class="points-section">
+            <div class="points-box">
+                <span class="points-label">🏆 النقاط</span>
+                <span class="points-value" id="pointsDisplay">0</span>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <div class="question-text" id="questionText">...</div>
+        </div>
+
+        <div class="options-grid" id="optionsContainer"></div>
+
+        <div class="footer">
+            <div class="progress">
+                <span id="currentStage">1</span> / 100
+            </div>
+            <button class="reset-btn" id="resetBtn">🔄 إعادة البدء</button>
+        </div>
+
+        <div class="no-timer-note">
+            ⏰ لا يوجد وقت محدد - اختر إجابتك الآن
+        </div>
+
+        <div id="winMessage" class="win-message" style="display: none;">
+            🎉 تهانينا! لقد أكملت 100 مرحلة بنجاح! 🎉
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
